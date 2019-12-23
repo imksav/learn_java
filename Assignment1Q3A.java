@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Assignment1Q3A {
 
@@ -15,12 +16,15 @@ public class Assignment1Q3A {
 			for(int i = 0; i < size; i++) {
 				for(int j = i + 1; j < size; j++) {
 					if(a[i] > a[j]) {
+			// swapping the value to find the largest number in array to compare with each other....
 						int temp = a[i];
 						a[i] = a[j];
 						a[j] =	temp;				
 					}
 				}
 			}
-			System.out.println(a[size - 1]);
+			// printing the largest number in the array....
+			System.out.print("The largest number in an array is " +a[size-1]+ ".");
+
 		}
 }
