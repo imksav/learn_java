@@ -5,6 +5,9 @@ public class Assignment1Q4 {
 		// TODO Auto-generated method stub
 		
 		float sum = 0;
+		int hot = 0;
+		int pleasant = 0;
+		int cold = 0;
 		
 		System.out.println("Enter the number of days:- ");
 		
@@ -27,14 +30,21 @@ public class Assignment1Q4 {
 		for(int i = 0; i < days; i++) {
 			if(a[i] > 85) {
 				System.out.println("The temperature of day "+ (i+1) + " is very hot.");
+				hot = hot + 1;
 			}
 			else if(a[i] > 65) {
 				System.out.println("The temperature of day "+ (i+1) + " is pleasant.");
+				pleasant = pleasant + 1;
 			}
 			else {
 				System.out.println("The temperature of day "+ (i+1) + " is very cold.");
+				cold = cold + 1;
 			}
 		}
+		//	for counting number of days for each category i.e. very hot, pleasant, cold......
+		System.out.println("Total number of very hot days = " +hot);
+		System.out.println("Total number of pleasant days = " +pleasant);
+		System.out.println("Total number of very cold days = " +cold);
 		
 		
 		//	for total temperature calculation...... 
