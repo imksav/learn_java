@@ -16,7 +16,7 @@ public class Assignment1Q4 {
 		int []a = new int[days];
 		
 		//	assigning the days............
-		System.out.println("Enter tempreature of each day:- ");
+		System.out.println("Enter temperature of each day:- ");
 		for(int i = 0; i < days; i++) {
 			a[i] = sc.nextInt();
 		}
